@@ -13,9 +13,9 @@ const iceServers = {
 	iceServers: [
 		{ urls: `stun:stun.l.google.com:19302` },
 		{
-			urls: `turn:${LOCAL_IP_ADDRESS}:3478`,
-			username: "username",
-			credential: "password"
+			urls: `turn:numb.viagenie.ca:3478`,
+			username: "yourusername",
+			credential: "yourpassword"
 		}
 	]
 };
