@@ -11,12 +11,8 @@ let remoteDescriptionPromise, roomName, localStream, remoteStream,
 // but we don't need for local development
 const iceServers = {
 	iceServers: [
-		{ urls: `stun:stun.l.google.com:19302` },
-		{
-			urls: `turn:turn.services.mozilla.com:443?transport=tcp`,
-			username: "webrtc",
-			credential: "webrtc"
-		}
+		{ 'urls': 'stun:stun.stunprotocol.org:3478' },
+		{ 'urls': 'stun:stun.l.google.com:19302' },
 	]
 };
 
