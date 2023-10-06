@@ -13,9 +13,9 @@ const iceServers = {
 	iceServers: [
 		{ urls: `stun:stun.l.google.com:19302` },
 		{
-			urls: `turn:turnserver.example.com:3478`,
-			username: "username",
-			credential: "password"
+			urls: `turn:turn.services.mozilla.com:443?transport=tcp`,
+			username: "webrtc",
+			credential: "webrtc"
 		}
 	]
 };
