@@ -19,9 +19,9 @@ const iceServers = {
 
 const streamConstraints = { audio: true, video: true };
 
-let socket = io.connect(`https://${LOCAL_IP_ADDRESS}`, { secure: true });
+// let socket = io.connect(`https://${LOCAL_IP_ADDRESS}`, { secure: true });
 // let socket = io.connect("http://localhost");
-// let socket = io.connect("https://video-call-a95d.onrender.com:443");
+let socket = io.connect("https://video-call-a95d.onrender.com:443");
 
 //let socket = io.connect("http://3.125.183.140:8000");
 btnToggleVideo.addEventListener("click", () => toggleTrack("video"));
