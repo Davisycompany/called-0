@@ -186,7 +186,7 @@ handleSocketEvent("full", e => {
 
 const onIceCandidate = e => {
     if (e.candidate) {
-        console.log("sending ice candidate");
+        console.log("sending ice candidate" + e.candidate);
         socket.emit("candidate", {
             type: "candidate",
             label: e.candidate.sdpMLineIndex,
